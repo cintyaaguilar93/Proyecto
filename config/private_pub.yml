@@ -6,5 +6,5 @@ test:
   secret_token: "secret"
 production:
    server: "https://proyectochat.herokuapp.com/faye"
-  secret_token: "secret"
+ # secret_token: "secret"
   signature_expiration: 86400 # one day
