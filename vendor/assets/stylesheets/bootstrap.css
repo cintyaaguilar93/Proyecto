@@ -899,7 +899,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: black;
-    background-color: #03ce03;
+    background-color: #77dd77;
 }
 input,
 button,
@@ -910,7 +910,7 @@ textarea {
     line-height: inherit;
 }
 a {
-    color: blue;
+    color: green;
     text-decoration: none;
 }
 a:hover,
@@ -2811,8 +2811,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
     color: #fff;
-    background-color: #428bca;
-    border-color: #357ebd;
+    background-color: green;
+    border-color: lime;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2820,8 +2820,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #3071a9;
-    border-color: #285e8e;
+    background-color: lime;
+    border-color: green;
 }
 .btn-primary:active,
 .btn-primary.active,

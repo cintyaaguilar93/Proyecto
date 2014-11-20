@@ -6689,3 +6689,1004 @@ Started GET "/assets/messages.js?body=1" for 189.220.165.253 at 2014-11-20 22:42
 
 
 Started GET "/assets/application.js?body=1" for 189.220.165.253 at 2014-11-20 22:42:36 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:04:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"  WHERE (NOT (id = 3))  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "conversations"  WHERE (conversations.sender_id =3 OR conversations.recipient_id =3)
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT "conversations".* FROM "conversations"  WHERE (conversations.sender_id =3 OR conversations.recipient_id =3)  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1  [["conversation_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 2]]
+  Rendered users/index.html.erb within layouts/application (45.8ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+Completed 200 OK in 139ms (Views: 122.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:04:17 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:06:47 +0000
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"  WHERE (NOT (id = 3))  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "conversations"  WHERE (conversations.sender_id =3 OR conversations.recipient_id =3)
+  [1m[36mConversation Load (0.2ms)[0m  [1mSELECT "conversations".* FROM "conversations"  WHERE (conversations.sender_id =3 OR conversations.recipient_id =3)  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMessage Load (0.1ms)[0m  SELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1  [["conversation_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages"  WHERE "messages"."conversation_id" = ?  ORDER BY "messages"."id" DESC LIMIT 1[0m  [["conversation_id", 2]]
+  Rendered users/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 1887ms (Views: 1885.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:49 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:06:50 +0000
+
+
+Started DELETE "/users/sign_out" for 200.79.203.195 at 2014-11-20 23:07:05 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xp41ESqYm6sYtkAHLEibOMJZQK/X/GUOyg/xj2/2hck="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://quick-missile-13-138395.usw1-2.nitrousbox.com/
+Completed 302 Found in 15ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:07:05 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:07:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:07:05 +0000
+
+
+Started GET "/" for 173.252.101.116 at 2014-11-20 23:07:16 +0000
+Processing by Devise::SessionsController#new as */*
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/users.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:24 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:25 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:25 +0000
+
+
+Started GET "/assets/users.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:25 +0000
+
+
+Started GET "/assets/application.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:25 +0000
+
+
+Started GET "/" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/users.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/application.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/assets/application.js?body=1" for 189.220.165.253 at 2014-11-20 23:07:44 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:08:15 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:16 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:46 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:46 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:46 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:46 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:46 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:08:49 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:50 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:08:55 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:08:56 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:11:11 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:12 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:11:14 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:11:15 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:15:04 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:15:05 +0000
+
+
+Started POST "/users/sign_in" for 200.79.203.195 at 2014-11-20 23:16:15 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I+zjIldJR0v0/nlrS10ZBsQ2P+5N8D+lRyLbQrvV/mk=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:17 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:17 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:16:18 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:19 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:16:25 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:16:26 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:19:01 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:02 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:19:03 +0000
+
+
+Started GET "/" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/application.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/users.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/users.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 189.220.165.253 at 2014-11-20 23:20:13 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:21:03 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:03 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:03 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:03 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:03 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:04 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:06 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:21:06 +0000
+
+
+Started GET "/" for 189.220.165.253 at 2014-11-20 23:23:28 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/users.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/application.css?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/users.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/assets/application.js?body=1" for 189.220.165.253 at 2014-11-20 23:23:29 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:23:53 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:53 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:23:54 +0000
+
+
+Started GET "/" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/chat.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/users.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/application.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/conversations.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/messages.css?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/private_pub.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/chat.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/conversations.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/messages.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/users.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
+
+
+Started GET "/assets/application.js?body=1" for 200.79.203.195 at 2014-11-20 23:24:16 +0000
