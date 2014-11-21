@@ -898,8 +898,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+    color: black;
+    background-color: #03ce03;
 }
 input,
 button,
@@ -910,7 +910,7 @@ textarea {
     line-height: inherit;
 }
 a {
-    color: #428bca;
+    color: blue;
     text-decoration: none;
 }
 a:hover,
@@ -4104,7 +4104,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-color: transparent;
 }
 .navbar-default .navbar-text {
-    color: #777;
+    color: orange;
 }
 .navbar-default .navbar-nav > li > a {
     color: #777;
@@ -4188,26 +4188,31 @@ fieldset[disabled] .navbar-default .btn-link:focus {
     color: #ccc;
 }
 .navbar-inverse {
+<<<<<<< HEAD
     background-color: #222;
     border-color: #CC6699;
+=======
+    background-color: green;
+    border-color: green;
+>>>>>>> e4b5b9c0aa639dbafe7b9759114d59ac766d4d86
 }
 .navbar-inverse .navbar-brand {
-    color: #777;
+    color: white;
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-    color: #fff;
+    color: lime;
     background-color: transparent;
 }
 .navbar-inverse .navbar-text {
     color: #777;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #777;
+    color: white;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: #fff;
+    color: lime;
     background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
